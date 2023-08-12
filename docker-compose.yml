@@ -22,10 +22,10 @@ services:
   db:
     image: mysql:5.7
     environment:
-      MYSQL_ROOT_PASSWORD=rootpassword
-      MYSQL_DATABASE=gitea
-      MYSQL_USER=gitea
-      MYSQL_PASSWORD=somepassword
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_DATABASE=gitea
+      - MYSQL_USER=gitea
+      - MYSQL_PASSWORD=somepassword
     volumes:
       - mysql_data:/var/lib/mysql
 
